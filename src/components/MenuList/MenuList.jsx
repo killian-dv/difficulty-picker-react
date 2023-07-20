@@ -1,7 +1,7 @@
 import s from "./style.module.css";
 import { MenuListItem } from "../MenuListItem/MenuListItem";
 
-export function MenuList(difficulty, onItemClick) {
+export function MenuList({ difficulty, onItemClick }) {
     return (
         <div className={s.container}>
             <MenuListItem onClick={onItemClick} difficulty="Low" />
